@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Concrete Mix Design Usign BS</title>
+		<script type="text/javascript" src="/static/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="/static/main.js"></script>
+	</head>
+	<body>
+		Target Strength : <input type="number" id="target-f" > N/mm^2<br/>
+		Max Aggregate Size : <input type="number" id="max-agg-size" /> mm <br/>
+		Average Slump : <input type="number" id="avg-slump" /> mm <br/>
+
+		Grading (Percentage of particles below 600um) : <input type="number" id="grading" /> % <br/>
+		Average Sp. Gravity of Aggregates : <input type="number" id="avg-spg"> <br/>
+		Cement Type :
+		<select id="ctype">
+			<option data="1"> Ordinary Portland Cement (I) </option>
+			<option data="5"> Sulphate Resisting Cement (V) </option>
+			<option data="3"> Rapid Hardening Cement (III) </option>
+		</select>
+
+		<br/>
+		Aggregate: 
+		<select id="crushed">
+			<option  data="Crushed"> Crushed</option>
+			<option data="Uncrushed"> Uncrushed </option>
+		</select>
+		<br/>
+		<input type="Button" onclick="updateCalculation();" value="Calculate">
+		<br/>
+		<div id="output">
+		</div>
+	</body>
+</html>
+				
+		
+		
+			
