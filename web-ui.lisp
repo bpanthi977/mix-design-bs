@@ -1,9 +1,5 @@
 (in-package :mix-design-bs)
 
-(ql:quickload :ningle)
-(ql:quickload :clack)
-(ql:quickload :cl-json)
-
 (defparameter *base-dir* *load-truename*)
 (defparameter *app* (make-instance 'ningle:<app>))
 (defvar *server* nil)
