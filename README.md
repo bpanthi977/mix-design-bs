@@ -5,7 +5,7 @@ Design concrete mix using British Standard.
 
 quickload this program to start a server at localhost:5678 and calcuate design ratio and cement, water, aggreagte contents. 
 
-![Screenshot](static/screenshot.png)
+![Screenshot](static/demo.png)
 
 ## License
 
