@@ -1,6 +1,6 @@
 (in-package :mix-design-bs)
 
-(defparameter *base-dir* *load-truename*)
+(defparameter *base-dir* (asdf:system-source-directory :mix-design-bs))
 (defparameter *app* (make-instance 'ningle:<app>))
 (defvar *server* nil)
 
@@ -50,6 +50,7 @@
 	(clack:stop *server*)
 	(setf *server* nil)))
 
-(start)
+;; (start)
 
-
+;; Run this to save an image 
+;; sbcl --eval "(ql-setup)" --eval "(ql:quickload :mix-design-bs)" --eval "(progn (gc :full t) (save-lisp-and-die \"mix-design\")) "
